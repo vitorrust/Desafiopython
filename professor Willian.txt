@@ -1,0 +1,59 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+numeroinserido = float(input("Insira um numero : "))
+
+salarioantesreajuste = numeroinserido
+aumentoaplicado = 0
+
+if numeroinserido <= 200:
+    numeroinserido *= 1.20 #AUMENTO 20%
+    aumentoaplicado = numeroinserido - salarioantesreajuste
+    inflacao = aumentoaplicado * 0.038
+    aumentotal = aumentoaplicado - inflacao
+    aumentobruto = numeroinserido - (numeroinserido * 0.038)
+    
+    
+    print("O SALARIO ANTES DO REAJUSTE É : ", salarioantesreajuste)
+    print("O SALARIO APÓS REAJUSTE 20% É : ", numeroinserido)
+    print("O AUMENTO DO SALARIO FOI DE : ", aumentoaplicado)
+    print("DESCONTADO A INFLAÇÃO O AUMENTO REAL FOI DE : ", aumentotal)
+    print("O SALARIO DESCONTADO A INFLAÇÃO É : ", aumentobruto)
+    
+if numeroinserido > 280 and numeroinserido < 700:
+    numeroinserido *= 1.15 #AUMENTO 15%
+    aumentoaplicado = numeroinserido - salarioantesreajuste
+    inflacao = aumentoaplicado * 0.038
+    aumentototal = aumentoaplicado - inflacao
+    aumentobruto = numeroinserido - (numeroinserido * 0.038)
+    
+    print("O SALARIO ANTES DO REAJUSTE É : ", salarioantesreajuste)
+    print("O SALARIO APÓS REAJUSTE 15% É : ", numeroinserido)
+    print("O AUMENTO DO SALARIO FOI DE : ", aumentoaplicado)
+    print("DESCONTADO A INFLAÇÃO O AUMENTO REAL FOI DE : ", aumentototal)
+    print("O SALARIO DESCONTADO A INFLAÇÃO É : ", aumentobruto)
+
+if numeroinserido >= 700 and numeroinserido <= 1500:
+    numeroinserido *= 1.10 #AUMENTO 10%
+    aumentoaplicado = numeroinserido - salarioantesreajuste
+    inflacao = aumentoaplicado * 0.038
+    aumentototal = aumentoaplicado - inflacao
+    aumentobruto = numeroinserido - (numeroinserido * 0.038)
+    
+    print("O SALARIO ANTES DO REAJUSTE É : ", salarioantesreajuste)
+    print("O SALARIO APÓS REAJUSTE 10% É : ", numeroinserido)
+    print("O AUMENTO DO SALARIO FOI DE : ", aumentoaplicado)
+    print("DESCONTADO A INFLAÇÃO O AUMENTO REAL FOI DE : ", aumentototal)
+    print("O SALARIO DESCONTADO A INFLAÇÃO É : ", aumentobruto)
+
+else:
+    numeroinserido *= 1.05 #AUMENTO 5%
+    aumentoaplicado = numeroinserido - salarioantesreajuste
+    inflacao = aumentoaplicado * 0.038
+    aumentototal = aumentoaplicado - inflacao
+    aumentobruto = numeroinserido - (numeroinserido * 0.038)
+    
+    print("O SALARIO ANTES DO REAJUSTE É : ", salarioantesreajuste)
+    print("O SALARIO APÓS REAJUSTE 5% É : ", numeroinserido)
+    print("O AUMENTO DO SALARIO FOI DE : ", aumentoaplicado)
+    print("DESCONTADO A INFLAÇÃO O AUMENTO REAL FOI DE : ", aumentototal)
+    print("O SALARIO DESCONTADO A INFLAÇÃO É : ", aumentobruto)
